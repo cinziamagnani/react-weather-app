@@ -3,19 +3,10 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>React Weather App</h1>
+      <footer>
+        <a href="https://github.com/cinziamagnani/react-weather-app">Open-source code</a>, by <a href="https://cinziamagnani.com/">Cinzia Magnani</a>
+      </footer>
     </div>
   );
 }
