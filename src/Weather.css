@@ -2,12 +2,68 @@
     border: 1px solid #dadde1;
     border-radius: 10px;
     margin: 15px auto 5px auto;
+    background-image: linear-gradient(to bottom, #4366E0 0%, #BFCDFC 100%);
+    color: #ffffff;
+    font-family: 'avenir', 'helvetica', sans-serif;
+    font-weight: 100;
+}
+.Weather h1 {
+    font-weight: 500;
+    font-size: 30px;
+    margin-top: 30px;
 }
 
+.Weather h2, h3, p, li {
+    font-weight: 100;
+}
+
+.Weather h2 {
+    font-size: 16px;
+}
 .Weather .mainIcon {
-    font-size: 100px;
+    font-size: 80px;
+    text-align: right;
+    margin: 20px 0 10px 0;
 }
 
+.Weather ul {
+    padding-left: 0;
+}
+
+.Weather li {
+    list-style: none;
+    text-align: left;
+}
+
+.Weather .tempMajor {
+    margin-top: 35px;
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 1;
+    padding-bottom: 5px;
+}
+
+.Weather .mainCondition {
+    color: rgba(255,255,255, 0.7);
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.Weather .moreInfo {
+    background-color: rgba(0,0,0, 0.2);
+    border-radius: 15px;
+    margin: 10px 40px 20px 40px;
+}
+
+.Weather .specifications {
+    padding-left: 5px;
+    padding-right: 5px;
+}
 .Weather .icons {
     font-size: 30px;
+    margin-top: 15px;
+}
+
+.Weather h3 {
+    font-size: 16px;
 }

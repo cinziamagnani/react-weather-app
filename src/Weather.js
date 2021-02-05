@@ -10,9 +10,7 @@ export default function Weather() {
                 Amsterdam
             </h1>
             <h2>
-                Wednesday, 3 February 
-                <br />
-                20:00
+                Wednesday, 3 February 20:00
             </h2>
             <div className="row">
                 <div className="col-6 mainIcon">
@@ -20,17 +18,17 @@ export default function Weather() {
             </div>
             <div className="col-6">
             <ul>
-                <li className="temp-major">
+                <li className="tempMajor">
                 27 °C
                 </li>
-                <li>
+                <li className="mainCondition">
                   Cloudy  
                 </li>
             </ul>
             </div>
             </div>
-            <div className="row">
-                <div className="col-4">
+            <div className="row moreInfo">
+                <div className="col-4 specifications">
                     <div className="icons">
                 <FontAwesomeIcon icon="thermometer-half" />
                 </div>
@@ -39,7 +37,7 @@ export default function Weather() {
                     </h3>
                     <p>26°C</p>
                 </div>
-                <div className="col-4">
+                <div className="col-4 specifications">
                 <div className="icons">
                 <FontAwesomeIcon icon="wind" />
                 </div>
@@ -49,7 +47,7 @@ export default function Weather() {
                     <p>2 km/h</p>
                 
                 </div>
-                <div className="col-4">
+                <div className="col-4 specifications">
                 <div className="icons">
                 <FontAwesomeIcon icon="tint" />
                 </div>
