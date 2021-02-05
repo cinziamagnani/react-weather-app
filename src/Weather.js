@@ -3,6 +3,7 @@ import "./Weather.css";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import './FontawesomeIcons.js';
 import axios from "axios";
+import FormattedDate from "./FormattedDate";
 
 export default function Weather(props) {
     let [weather, setWeather] = useState({ready:false});
@@ -18,7 +19,8 @@ export default function Weather(props) {
                 description: response.data.weather[0].description,
                 feelsLike: Math.round(response.data.main.feels_like),
                 wind: Math.round(response.data.wind.speed),
-                humidity: Math.round(response.data.main.humidity)
+                humidity: Math.round(response.data.main.humidity),
+                date: new Date(response.data.dt * 1000)
             }
         )
     }
@@ -30,7 +32,7 @@ export default function Weather(props) {
                     {weather.city}
                 </h1>
                 <h2>
-                    Wednesday, 3 February 20:00
+                    <FormattedDate moment={weather.date} />
                 </h2>
                 <div className="row">
                     <div className="col-6 mainIcon">
