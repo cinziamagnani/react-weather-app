@@ -6,7 +6,7 @@ export default function App() {
   return (
     <div className="App">
       <div className="container">
-      <Weather />
+      <Weather defaultCity="Amsterdam" />
       <footer>
         <a href="https://github.com/cinziamagnani/react-weather-app">Open-source code</a>, by <a href="https://cinziamagnani.com/">Cinzia Magnani</a>
       </footer>

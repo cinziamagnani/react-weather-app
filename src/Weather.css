@@ -47,10 +47,11 @@
     color: rgba(255,255,255, 0.7);
     font-size: 22px;
     font-weight: 500;
+    text-transform: capitalize;
 }
 
 .Weather .moreInfo {
-    background-color: rgba(0,0,0, 0.2);
+    background-color: rgba(0,0,0, 0.1);
     border-radius: 15px;
     margin: 10px 40px 20px 40px;
 }
