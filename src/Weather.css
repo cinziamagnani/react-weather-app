@@ -1,0 +1,13 @@
+.Weather {
+    border: 1px solid #dadde1;
+    border-radius: 10px;
+    margin: 15px auto 5px auto;
+}
+
+.Weather .mainIcon {
+    font-size: 100px;
+}
+
+.Weather .icons {
+    font-size: 30px;
+}
