@@ -3,7 +3,9 @@ import {
   faThermometerHalf,
   faWind,
   faCloud,
-  faTint
+  faTint,
+  faSearch,
+  faLocationArrow
 } from '@fortawesome/free-solid-svg-icons'
 
 
@@ -11,5 +13,7 @@ library.add(
   faThermometerHalf,
   faWind,
   faCloud,
-  faTint
+  faTint,
+  faSearch,
+  faLocationArrow
 )

@@ -20,6 +20,51 @@
 .Weather h2 {
     font-size: 16px;
 }
+
+.Weather form {
+    max-width: 560px;
+}
+.Weather .search {
+    margin: 15px 10px 15px 5px;
+}
+
+.Weather .col-10 {
+    margin: 0;
+    padding: 0;
+}
+
+.Weather input[type="text"] {
+    padding: 5px;
+}
+.Weather .iconsForm {
+    font-size: 18px;
+    color: #ffffff;
+    padding: 0;
+    margin: 0;
+}
+
+.Weather a.btn {
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    position: relative;
+    right: 7px;
+    margin: 0;
+    padding: 2;
+}
+
+.Weather .secondBtn {
+    position: relative;
+    left: 2px;
+}
+
+.Weather a.btn:hover {
+    background-color: #ffffff;
+    color: #4366E0;
+}
+.Weather .btn:hover .iconsForm {
+    color: #4366E0;
+}
+
 .Weather .mainIcon {
     font-size: 80px;
     text-align: right;
