@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
 import "./WeatherForecast.css";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import './FontawesomeIcons.js';
 import SingleForecast from "./SingleForecast";
 
