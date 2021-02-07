@@ -20,9 +20,11 @@ export default function Weather(props) {
                 feelsLike: Math.round(response.data.main.feels_like),
                 wind: Math.round(response.data.wind.speed),
                 humidity: Math.round(response.data.main.humidity),
-                date: new Date(response.data.dt * 1000)
+                date: new Date(response.data.dt * 1000),
+                icon: response.data.weather[0].icon,
             }
         )
+        console.log(response.data);
     }
     function search() {
         let apiUrl =`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;

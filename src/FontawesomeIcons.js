@@ -5,7 +5,16 @@ import {
   faCloud,
   faTint,
   faSearch,
-  faLocationArrow
+  faLocationArrow,
+  faCircle,
+  faMoon,
+  faCloudSun,
+  faCloudMoon,
+  faCloudRain,
+  faCloudShowersHeavy,
+  faBolt,
+  faSnowflake,
+  faStream
 } from '@fortawesome/free-solid-svg-icons'
 
 
@@ -15,5 +24,14 @@ library.add(
   faCloud,
   faTint,
   faSearch,
-  faLocationArrow
+  faLocationArrow,
+  faCircle,
+  faMoon,
+  faCloudSun,
+  faCloudMoon,
+  faCloudRain,
+  faCloudShowersHeavy,
+  faBolt,
+  faSnowflake,
+  faStream
 )
