@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import './FontawesomeIcons.js';
 import "./Weather.css";
 import WeatherInfo from "./WeatherInfo";
+import WeatherForecast from "./WeatherForecast";
 
 export default function Weather(props) {
     let [weather, setWeather] = useState({ready:false});
@@ -44,7 +45,6 @@ export default function Weather(props) {
                 icon: response.data.weather[0].icon,
             }
         )
-        console.log(response.data);
     }
     function search() {
         let apiUrl =`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
@@ -94,6 +94,7 @@ export default function Weather(props) {
                     </div>
                 </form>
                 <WeatherInfo info={weather} map={codeMapping}/>
+                <WeatherForecast city={weather.city} map={codeMapping} />
             </div>
         )
     } else {

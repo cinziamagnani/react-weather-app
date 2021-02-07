@@ -120,8 +120,6 @@
     bottom: 0.7em;
 }
 
-.Weather .smallUnit {
-    font-size: 12px;
-    position: relative;
-    bottom: 4px;
+.Weather a {
+    color: #202630;
 }
