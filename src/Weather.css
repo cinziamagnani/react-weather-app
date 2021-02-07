@@ -115,9 +115,9 @@
 }
 
 .Weather .unit {
-    font-size: 18px;
+    font-size: 0.5em;
     position: relative;
-    bottom: 17px;
+    bottom: 0.7em;
 }
 
 .Weather .smallUnit {

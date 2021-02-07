@@ -9,7 +9,27 @@ export default function Weather(props) {
     let [weather, setWeather] = useState({ready:false});
     const [city, setCity] = useState(props.defaultCity);
     let apiKey = "0eb6de8e155714745cc3ba77875938d2";
-    
+    const codeMapping = {
+        "01d": "circle",
+        "01n": "moon",
+        "02d": "cloud-sun",
+        "02n": "cloud-mood",
+        "03d": "cloud",
+        "03n": "cloud",
+        "04d": "cloud",
+        "04n": "cloud",
+        "09d": "cloud-showers-heavy",
+        "09n": "cloud-showers-heavy",
+        "10d": "cloud-rain",
+        "10n": "cloud-rain",
+        "11d": "bolt",
+        "11n": "bolt",
+        "13d": "snowflake",
+        "13n": "snowflake",
+        "50d": "stream",
+        "50n": "stream"
+     }
+
     function showTemperature(response) {
         setWeather(
             {
@@ -73,7 +93,7 @@ export default function Weather(props) {
                         </div>
                     </div>
                 </form>
-                <WeatherInfo info={weather} />
+                <WeatherInfo info={weather} map={codeMapping}/>
             </div>
         )
     } else {

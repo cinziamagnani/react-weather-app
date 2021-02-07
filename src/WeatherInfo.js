@@ -1,29 +1,10 @@
 import React from "react";
 import FormattedDate from "./FormattedDate";
+import Temperature from "./Temperature";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import './FontawesomeIcons.js';
 
 export default function WeatherInfo(props) {
-    const codeMapping = {
-        "01d": "circle",
-        "01n": "moon",
-        "02d": "cloud-sun",
-        "02n": "cloud-mood",
-        "03d": "cloud",
-        "03n": "cloud",
-        "04d": "cloud",
-        "04n": "cloud",
-        "09d": "cloud-showers-heavy",
-        "09n": "cloud-showers-heavy",
-        "10d": "cloud-rain",
-        "10n": "cloud-rain",
-        "11d": "bolt",
-        "11n": "bolt",
-        "13d": "snowflake",
-        "13n": "snowflake",
-        "50d": "stream",
-        "50n": "stream"
-     }
     return (
         <div className="WeatherInfo">
             <h1>
@@ -34,12 +15,12 @@ export default function WeatherInfo(props) {
                 </h2>
                 <div className="row">
                     <div className="col-6 mainIcon">
-                    <FontAwesomeIcon icon={codeMapping[props.info.icon]} />
+                    <FontAwesomeIcon icon={props.map[props.info.icon]} />
                 </div>
                 <div className="col-6">
                 <ul>
                     <li className="tempMajor">
-                    {props.info.temperature} <span className="unit">°C</span>
+                        <Temperature celsius={props.info.temperature} />
                     </li>
                     <li className="mainCondition">
                       {props.info.description}  
@@ -55,7 +36,7 @@ export default function WeatherInfo(props) {
                         <h3>
                             Feels like:
                         </h3>
-                        <p>{props.info.feelsLike} <span className="smallUnit">°C</span></p>
+                        <Temperature celsius={props.info.feelsLike} />
                     </div>
                     <div className="col-4 specifications">
                     <div className="icons">
